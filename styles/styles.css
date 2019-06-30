@@ -1,0 +1,244 @@
+header {
+	background: linear-gradient(90deg, rgba(38, 18, 95, 1) 0%, rgba(49, 27, 105, 1) 35%, rgba(57, 38, 97, 1) 100%);
+	padding: 20px 0 95px 0;
+
+}
+
+header .list {
+	list-style: none;
+	color: white;
+	padding-left: 0;
+		
+}
+
+header .list li {
+	display: inline;
+	margin-left: 45px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+header .list li:hover {
+	text-decoration: underline;
+}
+
+header .list li:nth-child(1) {
+	margin-left: 0;
+}
+
+header .logIn-sign {
+	position: relative;
+    bottom: 7px;
+}
+
+header .logIn-sign i {
+	color: white;
+}
+
+header .logIn-sign span {
+	color: white;
+	margin: 0 7px;
+}
+
+header .joomag-wework {
+	padding: 95px 0 50px 0;
+}
+
+header .joomag-wework img:nth-child(2) {
+	margin: 0 10px;
+}
+
+header .joomag-wework span {
+	color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header .text {
+	color: white;
+}
+
+header .text p {
+	margin-top: 35px;
+}
+
+header .fa-bars {
+	display: none;
+	color: white;
+    font-size: 30px;
+}
+
+.brands {
+	margin-top: 50px;
+	position: relative;
+
+}
+
+.brands img {
+	margin-left: 80px;
+}
+
+.brands>img:first-child {
+	margin-left: 0 !important;
+}
+
+.first-block {
+	padding: 100px 0 0 0;
+}
+
+.second-block {
+	height: 760px;
+	background-image: url('../assets/image-we-work.jpg');
+	clip-path: polygon(0% 0%, 100% 20%, 100% 85%, 0 100%);
+	-webkit-clip-path: polygon(0% 35%, 100% 20%, 100% 84%, 0 100%);
+	background-size: contain;
+	background-repeat: round;
+	position: relative;
+	bottom: 100px;
+	background-size: cover;
+}
+
+.features .row {
+	margin-top: 100px;
+}
+
+.features .row:nth-child(1) {
+	margin-top: 0;
+}
+
+.features .row div:nth-child(1) {
+	padding-right: 58px;
+}
+
+.features .row div:nth-child(2) {
+	padding-left: 58px;
+}
+
+.second-block-background{
+	background: rgb(42,21,104);
+	background: linear-gradient(90deg, rgba(38, 18, 95, 0.91) 0%, rgba(49, 27, 105, 0.91) 35%, rgba(57, 38, 97, 0.91) 100%);
+	height: 100%;
+	padding-top: 350px;
+}
+
+.second-block-background h1, .second-block-background h4 {
+	color: white;
+	margin-bottom: 35px;
+}
+
+.footer p:nth-child(1) {
+	font-size: 10px;
+	margin-top: 20px;
+	color: white;
+	margin-bottom: 35px;
+	font-size: 20px;
+}
+
+.footer p:nth-child(4) {
+	font-size: 10px;
+	margin-top: 20px;
+	color: white;
+	
+}
+
+.second-block-background input, .footer input {
+	padding: 12px 94px 12px 20px;
+	border-radius: 3px;
+	border: none;
+}
+
+.second-block-background button, .footer button {
+	padding: 12px 33px 12px 33px;
+    border: none;
+    margin-left: -7px;
+    background-color: #296cfc;
+    color: white;
+}
+
+.second-block-background button:hover, .footer button:hover {
+	background-color: #254b9c;
+}
+
+footer {
+	background: linear-gradient(90deg, rgba(38, 18, 95, 1) 0%, rgba(49, 27, 105, 1) 35%, rgba(57, 38, 97, 1) 100%);
+	height: 500px;
+	clip-path: polygon(0% 0%, 100% 20%, 100% 85%, 0 100%);
+	-webkit-clip-path: polygon(0% 35%, 100% 20%, 100% 100%, 0 100%);
+	padding-top: 240px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+	header .list li {
+		margin-left: 25px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.brands img {
+		margin-left: 50px !important; 
+	}
+
+	header .fa-bars {
+		display: block;
+	}
+
+	header .list {
+		display: none;
+	}
+
+	header .logIn-sign {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.brands img:nth-child(3), .brands img:nth-child(4), .brands img:nth-child(5) {
+		display: none;
+	}
+	
+	.features .row div:nth-child(1) {
+		text-align: center !important;
+		padding: 0;
+	}
+	
+	.features .row div:nth-child(2) {
+		text-align: center !important;
+		padding: 0;
+	}
+
+	.features .row img {
+		width: 90%;
+	}
+
+	.second-block {
+		clip-path: polygon(0% 0%, 100% 20%, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0% 25%, 100% 20%, 100% 94%, 0 100%);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	footer {
+		clip-path: polygon(0% 0%, 100% 20%, 100% 85%, 0 100%);
+    	-webkit-clip-path: polygon(0% 25%, 100% 20%, 100% 100%, 0 100%);
+	}
+
+	.second-block-background {
+		padding: 300px 8px 0 8px;
+	}
+
+	footer {
+		padding: 300px 8px 0 8px;
+		height: 700px;
+	}
+
+	.second-block-background input, .footer input {
+		display: block;
+		width: 100%;
+	}
+
+	.second-block-background button, .footer button {
+		margin-top: 30px;
+	}
+}
